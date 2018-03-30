@@ -31,8 +31,8 @@
 	   color: #D5D5D5
 	}
 	.carousel-caption{
-	   top: 80%;
-	   transform: translateY(-80%);
+	   top: 90%;
+	   transform: translateY(-90%);
 	   text-transform: uppercase;
 	}
 	.btn {
@@ -42,9 +42,46 @@
 	   background: #5E4485;
 	   border: 2px solid #FFF;
 	}
+	.container {
+	   margin: 4% auto;
+	}
+	
+	#icon {
+	   max-width: 200px;
+	   margin: 1% auto;
+	}
+	
+	footer {
+	   width: 100%;
+	   background-color: #5E4485;
+	   padding: 3%;
+	   color: #FFF;
+	}
+	.fa {
+	  padding: 15px;
+	  font-size: 25px;
+	  color: #FFF;
+	}
+	.fa:hover {
+	   text-decoration: none;
+	   color: #D5D5D5;
+	}
+	
+	@media (max-width: 900px) {
+	   .fa {
+	      font-size: 20px;
+	      padding: 10px;
+	   }
+	}
 	@media (max-width: 600px) {
 	   .carousel-caption {
 	      display: none;
+	   }
+	   #icon {
+	      max-width: 150px;
+	   }
+	   h2 {
+	      font-size: 1.7em;
 	   }
 	} 
   </style>
@@ -63,9 +100,8 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
 					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Resume</a></li>
 					<li><a href="#">Projects</a></li>
-					<li><a href="#">Blog</a></li>
+					<li><a href="http://zenga.xyz/blog">Blog</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</div>
@@ -108,19 +144,111 @@
 	</div> <!-- End of Slider -->
 	
 	<div class="container text-center">
-	   <h2> Things I have been involved with</h2>
+	   <div class="s-title has-fresh-line">
+	   <h2 class="s-component-content s-font-title"> <p><strong>Projects I am currently working on!</strong></p></h2>
+	   </div>
 	   <div class="row">
-	      <div class="col-sm-4"></div>
+	      <div class="col-sm-4">
+	         <img src="images/html5.png" id="icon">
+	         <h4>HTML5</h4>
+	      </div>
+	      <div class="col-sm-4">
+	         <img src="images/bootstrap.png" id="icon">
+	         <h4>Bootstrap</h4>
+	      </div>
+	      <div class="col-sm-4">
+	         <img src="images/css3.png" id="icon">
+	         <h4>CSS3</h4>
+	      </div>
 	   </div>
 	</div>
 	
+	<div class="container>
+	<div>
+	   <div class="row">
+	      <div class="col-md-6">
+	         <h3><strong>Created a translation gateway system.</strong></h3>
+	         <p>
+	         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	         </p>
+	         <p>
+	         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+	         </p>
+	      </div>
+	      <div class="col-md-6">
+	         <img src="images/bootstrap2.jpg" class="img-responsive">
+	      </div>
+	   </div>
+	</div>
+	 
+	<div class="container>
+	   <div class="row">
+	   
+	   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	         <h3><strong> Artificial Intelligence with JavaScript</strong></h3>
+	         <p>
+	         A dive into artificial intelligence with JavaScript and simple algorithmic logic to showcase basic A.I concepts! 
+	         </p>	      
+	  </div>
+	      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	         <img src="images/ai-2.png" class="img-responsive">
+	      </div>
+	   <!--*************************-->
+	      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	         <h3><strong> VMX Web Browser .</strong></h3>
+	         <p>
+	         Created a web browser using the .NET Framework that is capable of performing basic navigation over the internet. 
+	         </p>	      
+	      </div>
+	      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	         <img src="images/sass.png" class="img-responsive">
+	      </div>
+	   </div>
+	   
+	       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	         <h3><strong>VMX Translate.</strong></h3>
+	         <p>
+	         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 		printer took a galley of type and scrambled it to make a type specimen book. 
+	         </p>	      
+	      </div>
+	      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	         <img src="images/less.png" class="img-responsive">
+	      </div>
+	</div>
 	
+		<div class="container>
+	   <div class="row">
+	      <h3><a href="#hidden" data-toggle="collapse">See more projects.</a></h3>
+	       <div id="hidden" class="collapse">
+	         <h3><strong>Created a translation gateway system.</strong></h3>
+	         <p>
+	         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	         </p>
+	         <p>
+	         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+	         </p>
+	      </div>
+	   </div>
+	</div>
 	
-	
-	
-	
-	
-	
+	<footer class="container-fluid text-center">
+	   <div class="row">
+	      <div class="col-sm-4">
+	         <h3>Reach out</h3>
+	         <br>
+	         <h4>Atlanta, GA</h4>
+	      </div>
+	      
+	      <div class="col-sm-4">
+	         <h3>Connect<h3>
+	         <a class="fa fa-facebook"></a>
+	         <a class="fa fa-twitter"></a>
+	         <a class="fa fa-linkedin"></a>
+	         <a class="fa fa-instagram"></a>
+	         <a class="fa fa-angellist"></a>
+	      </div>
+	   </div>
+	</footer>
 	
 	
 </body>
